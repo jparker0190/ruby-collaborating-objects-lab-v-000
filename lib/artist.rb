@@ -10,6 +10,9 @@ class Artist
     @songs
   end
 
+  def save
+    @songs
+  end
   def self.find_or_create_by_name(name)
     @@all.each do |artist|
       if artist.name == name

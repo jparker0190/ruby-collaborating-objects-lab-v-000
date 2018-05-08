@@ -7,9 +7,9 @@ class Artist
   end
 
   def self.all
-    @@all    
+    @@all
   end
-  
+
   def songs
     Song.find_by_artist(self)
   end

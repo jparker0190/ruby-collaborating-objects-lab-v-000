@@ -21,6 +21,12 @@ class Artist
   def self.all
     @@all
   end
+
+  def print_songs
+    @songs.each do |song|
+      puts song.name
+    end
+  end
   def self.find_or_create_by_name(name)
     @@all.each do |artist|
       if artist.name == name

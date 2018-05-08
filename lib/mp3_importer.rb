@@ -5,7 +5,7 @@ class MP3Importer
     @path = path
   end
 
-  def import
+  def swlef.import
     files.each do |f|
       Song.new_by_filename(f)
     end

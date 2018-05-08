@@ -5,7 +5,7 @@ class MP3Importer
     @path = path
   end
 
-  def self.import
+  def import
     files.each do |f|
       Song.new_by_filename(f)
     end
